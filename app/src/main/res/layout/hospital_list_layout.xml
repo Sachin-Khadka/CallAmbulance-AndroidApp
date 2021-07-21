@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#cff"
+    tools:context=".landing.EmergencyLanding">
+
+    <ImageView
+        android:id="@+id/hospitalImage"
+        android:layout_width="140dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/hospitalName"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/hospitalImage"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:text="@string/hospital_name"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hospitalType"
+        android:layout_width="match_parent"
+        android:text="@string/hospital_type"
+        android:layout_toRightOf="@id/hospitalImage"
+        android:layout_below="@+id/hospitalName"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hospitalFor"
+        android:layout_width="match_parent"
+        android:text="@string/hospital_for"
+        android:layout_toRightOf="@id/hospitalImage"
+        android:layout_below="@+id/hospitalType"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hospitalPhone"
+        android:layout_width="match_parent"
+        android:text="@string/hospital_phone"
+        android:layout_toRightOf="@id/hospitalImage"
+        android:layout_below="@+id/hospitalFor"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

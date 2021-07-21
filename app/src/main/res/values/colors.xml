@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- color for Login Page -->
+    <color name="background">#ffcc00</color>
+    <color name="miniBackground">#ffff66</color>
+    <color name="loginButton">#a6008e</color>
+    <color name="signButton">#6948f6</color>
+    <color name="forgotButton">#8ad521</color>
+    <color name="wtext">#ffffff</color>
+    <color name="btext">#050101</color>
+
+
+    <color name="whatsapp_green">#00897b</color>
+    <color name="bubble_background_rcv">#f3ffd2</color>
+    <color name="bubble_background_send">#d2ffdb</color>
+
+</resources>

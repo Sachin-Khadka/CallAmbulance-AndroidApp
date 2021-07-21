@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#cff"
+    tools:context=".landing.EmergencyLanding">
+
+    <ImageView
+        android:id="@+id/emergencyImage"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/emergencyName"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/emergencyImage"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="@string/emergency_name"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/emergencyType"
+        android:layout_width="match_parent"
+        android:text="@string/emergency_type"
+        android:layout_toRightOf="@id/emergencyImage"
+        android:layout_below="@+id/emergencyName"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:textColor="#2CA7E0"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

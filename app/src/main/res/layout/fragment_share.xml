@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:text="Share"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for Sharing our Application."
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+       android:textColor="#2CA7E0"
+       android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:fontFamily="sans-serif"
+        android:textColor="#2CA7E0"
+        android:textStyle="bold"
+        android:gravity="center">
+    </Button>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/aboutUs"
+        android:layout_below="@+id/viewText"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxLines="4"
+        android:lines="4"
+        android:scrollbarSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#2CA7E0"
+        android:text="This App main aim  is to provide ambulance services as well as all the information related
+to the health. This app is not final Released. Our Team and Developers are work hard to make this app effective and efficient.">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="365dp"
+        android:layout_height="209dp"
+        android:layout_below="@+id/aboutUs"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lines="20"
+        android:maxLines="20"
+        android:scrollbarSize="16sp"
+        android:text="
+
+The scope for the mobile application: \n
+1. This mobile app is target for all smartphone user, who ever have smartphone that
+will be able to use this mobile application. \n
+2. This mobile app require use mobile data in order to post status and image to social
+network.
+3. GPS is require to get the current location of the user. \n
+4. Camera is require to capture the user current situation."
+        android:textColor="#2CA7E0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/about"
+        android:id="@+id/aboutIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Copy Right reserved: Joker."
+        android:gravity="center"
+        android:textColor="#2CA7E0"
+        android:textStyle="bold"
+        android:layout_marginTop="500dp"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <RelativeLayout
+      android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ambulance_logo"
+            android:padding="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/circle_ambulance"
+            android:contentDescription="@string/logo_desc"
+            />
+
+            <TextView
+                android:id="@+id/ambulance_text_view"
+                android:layout_below="@id/ambulance_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/call_ambulance"
+                android:textColor="#2CA7E0"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="105dp"
+             android:layout_marginRight="20dp"
+             >
+             <TextView
+                 android:id="@+id/register_form"
+                 android:layout_width="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:text="Registration Form"
+                 android:textSize="20dp"
+                 android:fontFamily="sans-serif"
+                 android:layout_height="wrap_content"
+                 />
+
+<!--         <EditText-->
+<!--             android:id="@+id/register_username"-->
+<!--             android:layout_width="match_parent"-->
+<!--             android:layout_below="@id/register_form"-->
+<!--             android:fontFamily="sans-serif"-->
+<!--             android:layout_height="wrap_content"-->
+<!--             android:hint="Full Name"-->
+<!--             app:errorEnabled="true"-->
+<!--             android:inputType="text"-->
+<!--             android:drawableLeft="@drawable/ic_person_register"-->
+<!--             />-->
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/register_username"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:counterEnabled="true"
+                 app:counterMaxLength="15"
+                 android:layout_marginTop="40dp"
+                 app:errorEnabled="true">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="Username"
+                 android:inputType="text"
+                 android:drawableLeft="@drawable/ic_person_register"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+<!--             <EditText-->
+<!--                 android:id="@+id/register_email"-->
+<!--                 android:layout_below="@+id/register_username"-->
+<!--                 android:layout_width="match_parent"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:inputType="textEmailAddress"-->
+<!--                 app:errorEnabled="true"-->
+<!--                 android:hint="Email"-->
+<!--                 android:drawableLeft="@drawable/ic_email"-->
+<!--                 />-->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/register_email"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/register_username"
+                 app:errorEnabled="true">
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="Email"
+                     android:drawableLeft="@drawable/ic_email"
+                     android:inputType="textEmailAddress" />
+             </com.google.android.material.textfield.TextInputLayout>
+
+<!--             <EditText-->
+<!--                 android:id="@+id/register_password"-->
+<!--                 android:layout_below="@+id/register_email"-->
+<!--                 android:layout_width="match_parent"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:inputType="textPassword"-->
+<!--                 android:hint="Password"-->
+<!--                 app:errorEnabled="true"-->
+<!--                 android:drawableLeft="@drawable/ic__lock"-->
+<!--                 />-->
+
+                 <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/register_password"
+                  android:layout_below="@+id/register_email"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:errorEnabled="true"
+                 app:passwordToggleEnabled="true">
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="Password"
+                     android:drawableLeft="@drawable/ic__lock"
+                     android:inputType="textPassword" />
+             </com.google.android.material.textfield.TextInputLayout>
+
+<!--             <EditText-->
+<!--                 android:id="@+id/register_re_password"-->
+<!--                 android:layout_below="@+id/register_password"-->
+<!--                 android:layout_width="match_parent"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:inputType="textPassword"-->
+<!--                 android:hint="Re-type password"-->
+<!--                 android:drawableLeft="@drawable/ic__lock"-->
+<!--                 />-->
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/register_re_password"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:errorEnabled="true"
+                 android:layout_below="@+id/register_password"
+                 app:passwordToggleEnabled="true">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:drawableLeft="@drawable/ic__lock"
+                     android:hint="Re-password"
+                     android:inputType="textPassword" />
+             </com.google.android.material.textfield.TextInputLayout>
+
+             <Button
+                 android:id="@+id/register_button"
+                 android:layout_below="@id/register_re_password"
+                 android:layout_width="150dp"
+                  android:layout_centerHorizontal="true"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/button"
+                 android:text="Register Now"
+                 android:layout_marginTop="10dp"
+                 android:textAllCaps="true"
+                 />
+             <TextView
+                 android:id="@+id/already_account"
+                 android:layout_below="@+id/register_button"
+                 android:layout_width="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="60dp"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="sans-serif"
+                 android:text="Already have an account?"
+                 android:textAllCaps="false"
+                 android:textColor="#2CA7E0"
+                 android:textSize="15dp"
+                 />
+
+             <Button
+                 android:id="@+id/register_login"
+                 android:layout_below="@id/register_button"
+                 android:layout_toRightOf="@+id/already_account"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/last_button"
+                 android:fontFamily="sans-serif"
+                 android:text="@string/login"
+                 android:textColor="#2CA7E0"
+                 android:textAllCaps="false"
+                 android:textSize="15dp"
+                 />
+         </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

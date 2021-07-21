@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Call Ambulance</string>
+    <string name="call_ambulance">Call Ambulance</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">LOGIN</string>
+    <string name="sign">SIGN UP</string>
+    <string name="forgot">FORGOT PASSWORD</string>
+    <string name="logo_desc">Logo of call ambulance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="emergency">Emergency Services</string>
+    <string name="emergency_name">Emergency Name</string>
+    <string name="emergency_type">Emergency Type</string>
+    <string name="hospital_list"> List of Hospital </string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="hospital_type">Hospital Type</string>
+    <string name="hospital_for">Hospital For </string>
+    <string name="hospital_phone">Hospital Phone </string>
+    <string name="text">Pick the Blood Donor </string>
+    <string name = "ok"> You Picked </string>
+    <string name="start_typing">Start typing</string>
+
+
+
+    <string-array name="items">
+        <item> Long Distance </item>
+        <item> Medium Distance </item>
+        <item> Short Distance </item>
+    </string-array>
+
+    <string-array name="prices">
+        <item> $100.99 </item>
+        <item> $70.88 </item>
+        <item> $30.80</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item> Provide Ambulance Services for Long Distance </item>
+        <item> Provide Ambulance Services for Medium Distance </item>
+        <item> Provide Ambulance Services for Short Distance </item>
+    </string-array>
+
+    <string-array name="donorsArray">
+        <item> Ram Bahadur : 9840439920</item>
+        <item> Hari Bahadur : 9840439921 </item>
+        <item> Shyan Bahadur : 9840439922 </item>
+        <item> Joe Bahadur : 9840439923 </item>
+        <item> John Bahadur :  9840439924 </item>
+        <item> Hacker Bahadur   : 9840439925 </item>
+        <item> Michal Bahadur  : 9840439933 </item>
+        <item> Thug Bahadur : 9840439935 </item>
+        <item> Android Bahadur :  9840439945 </item>
+        <item> Java Bahadur : 9840439947 </item>
+        <item> Python Bahadur : 9840439950 </item>
+        <item> AI Bahadur :  9840439970 </item>
+        <item> ML Bahadur : 9840439900 </item>
+    </string-array>
+
+
+</resources>
